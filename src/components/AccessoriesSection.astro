@@ -1,0 +1,27 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section title="Accessories"  color="rgb(31 41 55)">
+	<div slot="footerSection" class="flex flex-col justify-between">
+		<div class="h-32 flex flex-col justify-between">
+			<div class="flex gap-x-4">
+				<a
+					href=""
+					class="text-white border-[3px] border-gray-600 bg-gray-600 rounded font-medium px-12 py-2 hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
+					>Explorar inventario</a
+				>
+				<a
+					href=""
+					class="text-gray-600 bg-gray-100 rounded font-medium px-12 py-2 inline-flex items-center hover:bg-black hover:text-white transition-colors duration-200"
+					>Pedido personalizado</a>
+			</div>
+		</div>
+	</div>
+	<img
+		slot="background"
+		src="/accessories.avif"
+		alt="Accessories"
+		class="h-full w-full object-cover object-center"
+	/>
+</Section>

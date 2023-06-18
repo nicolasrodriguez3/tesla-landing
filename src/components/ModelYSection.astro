@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section title="Model Y" color="rgb(31 41 55)">
+	<a href="https://www.tesla.com/es_es/drive?selectedModel=modely" slot="subtitle" class="text-gray-800 text-sm underline">Concerta una prueba de conduccion hoy mismo</a>
+	<div slot="footerSection" class="h-32 flex flex-col justify-between">
+		<div class="flex gap-x-4">
+			<a
+				href=""
+				class="text-white border-[3px] border-gray-600 bg-gray-600 rounded font-medium px-12 py-2 hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
+				>Explorar inventario</a
+			>
+			<a
+				href=""
+				class="text-gray-600 bg-gray-100 rounded font-medium px-12 py-2 inline-flex items-center hover:bg-black hover:text-white transition-colors duration-200"
+				>Pedido personalizado</a
+			>
+		</div>
+		<footer>Disponible con Mooves</footer>
+	</div>
+	<img
+		slot="background"
+		src="/model-Y.avif"
+		alt="Model Y"
+		class="h-full w-full object-cover object-center"
+	/>
+</Section>
